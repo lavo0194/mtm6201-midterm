@@ -1,0 +1,324 @@
+button {
+  background-color: #99ff99;
+  border: none;
+  color: white;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 12px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+input[type=text] {
+  width: 30%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: none;
+border-bottom: 2px solid #339933;
+}
+h1{
+  text-align: center;
+  font-size: 35px;
+}
+p{
+  text-align: center;
+  opacity: 0.5;
+}
+.uname-email{
+  opacity: 0.5;
+}
+.psw{
+  opacity: 0.5;
+}
+.container{
+  text-align: center;
+  
+}
+
+.button  {
+  cursor: pointer;
+  
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 140px;
+  top: 12px;
+  transition: 0.5s;
+  color: black;
+}
+
+.button:hover {
+  padding-right: 25px;
+}
+
+.button:hover:after {
+  opacity: 1;
+  right: 0;
+}
+h2{
+  text-align: center;
+  font-size: 30px;
+  
+}
+.container-2{
+  text-align: center;
+  border: none;
+  padding: 25px 80px;
+  margin-left: 140px;
+  margin-right: 140px;
+  border-bottom: 2px solid #c2c2d6;
+}
+.button-1{
+  background-color: #99ff99;
+  border: none;
+  color: white;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+.button-2{
+  background-color: white;
+  border: solid #99ff99;
+  color: #99ff99;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 12px;
+}
+img{
+  border-radius: 8px;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+width: 20%;
+}
+h3{
+  text-align: center;
+  border: none;
+  border-bottom: solid #339933;
+  padding: 14px 40px;
+  margin-left: 25%;
+  margin-right: 25%;
+  
+}
+.money-2{
+  font-size: 20px;
+  color: #339933;
+  font-weight: bold;
+  float: right;
+  margin-right:-11%;
+}
+.money{
+  font-size: 17px;
+  text-decoration-line: line-through;
+  float: right;
+  margin-right: 25%;
+}
+.two{
+  border-radius: 8px;
+  display: block;
+margin-left: 40%;
+margin-right: 20%;
+width: 20%;
+}
+.raised{
+  float: center;
+}
+.three{
+  border-radius: 8px;
+  display: block;
+margin-left: 40%;
+margin-right: 20%;
+width: 20%;
+}
+.avatar{
+  float: right;
+  margin-top: 5%;
+  margin-right: 15%;
+  width: 50px;
+  height: 50px;
+      border-radius: 50%;}
+     
+      
+.flex-container{
+    display: flex;
+
+ }
+.sidebar {
+      flex: 0 0 400px; /* Sidebar width */
+      padding: 20px;           
+ }
+  .flex-container {
+      flex: 1; /* Fill remaining space */
+      padding: 20px;
+ }
+  body {
+      margin: 0;
+      padding: 0;
+    }
+ .sidebar {
+      position: fixed;
+      top: 0;
+      left: -250px; /* Sidebar hidden by default */
+      width: 250px;
+      height: 100vh;
+      background-color: #f1f1f1;
+      transition: left 0.3s;
+      text-decoration: none;
+     }
+
+.sidebar-open {
+left: 0; /* Sidebar visible when open */
+}
+.content {
+margin-left: 250px; /* Adjust content area when sidebar is open */
+padding: 20px;
+transition: margin-left 0.3s;
+}
+.sidebar ul {
+list-style-type: none;
+padding: 0;
+
+}
+.sidebar ul li {
+padding: 10px;
+}
+.sidebar-toggle {
+position: fixed;
+top: 20px;
+left: 20px;
+cursor: pointer;
+}
+.sidebar a:active{
+color: #339933;
+}
+.container-3 nav {
+background-color: white;
+padding: 10px;
+font-size: larger;
+text-align: left;
+margin-left: 30px;
+font-size: 30px;
+}
+.container-3 nav-button {
+display: inline-block;
+padding: 5px;
+border: 1px solid #fff;
+border-radius: 5px;
+text-decoration: none; /* Remove underline */
+color: white; /* Text color */
+}
+
+.container-3 nav-button:hover {
+background-color: #99ff99 /* Hover background color */
+}
+.rhino{
+  max-width: 100%; }
+
+
+/* Media queries for responsive design */
+@media screen and (min-width: 768px) {
+  .container-2 {
+      padding: 25px 20%; /* Adjust padding for medium screens */
+  }
+
+  .two,
+  .three {
+      width: 50%; /* Adjust width for medium screens */
+  }
+
+  .sidebar {
+      flex: 0 0 30%; /* Sidebar width on medium screens */
+  }
+
+  .content {
+      flex: 1; /* Fill remaining space */
+      padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-2 {
+      padding: 25px 30%; /* Adjust padding for large screens */
+  }
+
+  .two,
+  .three {
+      width: 30%; /* Adjust width for large screens */
+  }
+
+  .sidebar {
+      flex: 0 0 25%; /* Sidebar width on large screens */
+  }
+}
+    .message .avatar{
+      display: flex;
+      align-items: flex-start;
+      margin-right: 800px;
+    }
+    .text {
+       margin-left: 100px; 
+       
+    }
+  .message p{
+    display: flex;
+    text-align: flex-start;
+  }
+  .sticky-button {
+      position: sticky;
+      top: 0; 
+      padding: 20px 40px;
+      background-color: #339933;
+      color: white;
+      border: none;
+      cursor: pointer;
+      z-index: 1000; /* Ensure the button stays above other content */
+      
+      margin-left: 50%;
+      margin-bottom: 2%;
+      font-size: 17px;
+    
+      
+  }
+  @media screen and (max-width: 600px) {
+    .message .avatar {
+        margin-right: 5px; /* Adjust margin for smaller screens */
+    }
+
+    .text {
+        margin-left: 5px; /* Adjust margin for smaller screens */
+    }
+
+    .sticky-button {
+        padding: 5px 10px; /* Adjust padding for smaller screens */
+        margin-bottom: 10px; /* Adjust margin for smaller screens */
+    }
+}
+  .button-1 {
+    animation: blinking 1s infinite;
+}
+
+@keyframes blinking {
+    0% {
+        background-color: white;
+        border: 3px solid #99ff99;
+    }
+}
+  
